@@ -1,0 +1,142 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  @include on-event {
+    text-decoration: underline;
+  }
+}
+
+.btn,
+a {
+  @include transition(all 0.2s ease-in-out);
+  cursor: pointer;
+  
+  @include on-event {
+    outline: 0;
+    text-decoration: none;
+    @include boxshadow(none);
+  }
+}
+
+img {
+  display: block;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-focus-ring-color: none;
+  outline: none;
+
+  @include on-event {
+    @include boxshadow(none);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1220px;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 45px;
+  height: 45px;
+  
+  font-family: $font-gotham;
+  // font-weight: 800;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  border-radius: 36px;
+
+  &-primary {
+    color: $white;
+
+    font-size: 13.5px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    background-color: $brand-color;
+    border-color: $brand-color;
+
+    @include on-event {
+      color: $brand-color;
+      background-color: $white;
+      border-color: $white;
+    }
+  }
+
+  &-secondary {
+    color: $white;
+
+    font-size: 13.5px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    background-color: $yellow;
+    border-color: $yellow;
+
+    @include on-event {
+      color: $brand-color;
+      background-color: $white;
+      border-color: $white;
+    }
+  }
+
+  &-outline {
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 13.5px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: $white;
+
+    background-color: transparent;
+    border: 3px solid $white;
+
+    @include on-event {
+      color: $brand-color;
+      background-color: $white;
+      border-color: $white;
+    }
+  }
+
+  @include respond-to(sm-down) {
+    &-secondary {
+      font-size: 12px;
+    }
+  }
+}
+
+[data-toggle="collapse"] {
+  &[aria-expanded="true"] .is-collapsed {
+    display: none;
+  }
+  &[aria-expanded="false"] .not-collapsed  {
+    display: none;
+  }
+}

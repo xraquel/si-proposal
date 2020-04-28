@@ -1,0 +1,10 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@include font-face($font-gotham, $base-url + 'fonts/', 'Gotham-Black', 'Gotham-Black', 900);
+@include font-face($font-gotham, $base-url + 'fonts/', 'Gotham-Bold', 'Gotham-Bold', 600);
+@include font-face($font-gotham, $base-url + 'fonts/', 'Gotham-Medium', 'Gotham-Medium', 500);
+@include font-face($font-gotham, $base-url + 'fonts/', 'Gotham-Book', 'Gotham-Book', 400);

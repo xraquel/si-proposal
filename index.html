@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="site-language" content="en">
+
+  <title>Seller Interactive</title>
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.min.css">
+</head>
+
+<body>
+  <main>
+    <div class="sidebar">
+      <div class="sidebar-logo">
+        <img src="assets/images/si-logo.png" alt="SI Logo" />
+      </div>
+      <div class="sidebar-nav">
+        <a href="#" class="sidebar-link" onclick="openTab(event, 'hello')"> 
+          <span class="sidebar-link-icon sidebar-link-icon--one"></span>
+          Hello There!
+        </a>
+        <a href="#" class="sidebar-link" onclick="openTab(event, 'about')">
+          <span class="sidebar-link-icon sidebar-link-icon--two"></span>
+          About Us
+        </a>
+        <a href="#" class="sidebar-link" onclick="openTab(event, 'learn')">
+          <span class="sidebar-link-icon sidebar-link-icon--three"></span>
+          What We've Learned
+        </a>
+        <a href="#" class="sidebar-link dropdown-btn">
+          <span class="sidebar-link-icon sidebar-link-icon--four"></span>
+          Our Works 
+          <i class="fa fa-angle-down"></i>
+        </a>
+        <div class="sidebar-dropdown dropdown-container">
+          <a href="#" class="sidebar-dropdown-link">Web Design</a>
+          <a href="#" class="sidebar-dropdown-link">Social Media Design</a>
+          <a href="#" class="sidebar-dropdown-link">Ad Campaigns</a>
+          <a href="#" class="sidebar-dropdown-link">Amazon</a>
+          <a href="#" class="sidebar-dropdown-link">Product Development</a>
+          <a href="#" class="sidebar-dropdown-link">Branding</a>
+        </div>
+        <a href="#" class="sidebar-link dropdown-btn">
+          <span class="sidebar-link-icon sidebar-link-icon--five"></span>
+          Our Services 
+          <i class="fa fa-angle-down"></i>
+        </a>
+        <div class="sidebar-dropdown dropdown-container">
+          <a href="#" class="sidebar-dropdown-link">Amazon</a>
+          <a href="#" class="sidebar-dropdown-link">Growth Marketing</a>
+          <a href="#" class="sidebar-dropdown-link">Creative Design & Brand Building</a>
+          <a href="#" class="sidebar-dropdown-link">Product Development</a>
+        </div>
+        <a href="#" class="sidebar-link">
+          <span class="sidebar-link-icon sidebar-link-icon--six"></span>
+          Contact Us
+        </a>
+      </div>
+    </div>
+
+    <div class="section" w3-include-html="section.html"></div>
+  </main>
+
+  <script src="javascripts/vendors/w3schools-include.js"></script>
+  <script src="javascripts/vendors/jquery.min.js"></script>
+  <script src="javascripts/vendors/tether.min.js"></script>
+  <script src="javascripts/vendors/bootstrap.min.js"></script>
+  <script src="javascripts/main.min.js"></script>
+</body>
+</html>

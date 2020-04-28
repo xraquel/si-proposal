@@ -1,0 +1,129 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 17px;
+  width: 306px;
+  // height: 100vh;
+  background-color: $black;
+
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+
+  overflow-x: hidden;
+
+  &-logo {
+    padding: 25px 0;
+    border-bottom: 1px solid #313C4E;
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+
+    height: 68px;
+
+    font-family: $font-gotham;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1px;
+    color: #56657F;
+    transition: all .3s ease;
+
+    &-icon {
+      margin-right: 32px;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all .3s ease;
+
+      &--one {
+        background-image: url("../../assets/images/icon-hello-there.png");
+      }
+
+      &--two {
+        background-image: url("../../assets/images/icon-about-us.png");
+      }
+      
+      &--three {
+        background-image: url("../../assets/images/icon-learn.png");
+      }
+
+      &--four {
+        background-image: url("../../assets/images/icon-our-works.png");
+      }
+
+      &--five {
+        background-image: url("../../assets/images/icon-our-services.png");
+      }
+
+      &--six {
+        background-image: url("../../assets/images/icon-contact.png");
+      }
+    }
+
+    @include on-event {
+      color: $brand-color;
+      
+      .sidebar-link-icon {
+        &--one {
+          background-image: url("../../assets/images/icon-hello-there-2.png");
+        }
+        
+        &--two {
+          background-image: url("../../assets/images/icon-about-us-2.png");
+        }
+        
+        &--three {
+          background-image: url("../../assets/images/icon-learn-2.png");
+        }
+
+        &--four {
+          background-image: url("../../assets/images/icon-our-works-2.png");
+        }
+
+        &--five {
+          background-image: url("../../assets/images/icon-our-services-2.png");
+        }
+
+        &--six {
+          background-image: url("../../assets/images/icon-contact-2.png");
+        }
+      }
+    }
+  }
+
+  &-dropdown-link {
+    display: flex;
+    align-items: flex-end;
+    min-height: 22px;
+    margin-bottom: 7px;
+
+    font-family: $font-gotham;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.1px;
+    color: $white;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+
+  .dropdown-btn {
+    .fa {
+      margin-right: 8px;
+      margin-left: auto;
+      font-size: 22px;
+    }
+  }
+
+  .dropdown-container {
+    display: none;
+    margin-left: 55px;
+  }
+}
