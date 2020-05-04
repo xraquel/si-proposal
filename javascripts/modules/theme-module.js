@@ -1,38 +1,36 @@
-// $(function() {
+$(function() {
+  $("#hello").trigger("click");
 
-// });
-
-
-
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("dropdown-btn active");
-
-    for (i = 0; i < current.length; i++) {
-      var content = current[i].nextElementSibling;
-    
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      }
-
-      current[i].removeAttribute("active");
-      current[i].classList.remove("active")
-    }
-
-    this.classList.toggle("active");
-    this.toggleAttribute("active");
-    var dropdownContent = this.nextElementSibling;
-    
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
+  $(".navbar-toggler").click(function() {
+    $('.sidebar').toggleClass('open');
   });
-}
+
+  $(".btn-close").click(function() {
+    $('.sidebar').removeClass('open');
+  });
+
+  $('.works-dropdown a').click(function() {
+    $(this).siblings().removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('.dropdown-btn').each(function() {
+    $(this).click(function() {
+      $(this).siblings('.dropdown-btn').removeClass('active');
+      $(this).toggleClass('active');
+
+      var dropdownContent = $(this).next();
+
+      $(dropdownContent).siblings('.dropdown-container').addClass('d-none');
+
+      if($(dropdownContent).hasClass("d-none")) { 
+        $(dropdownContent).removeClass("d-none");
+      } else {
+        $(dropdownContent).addClass("d-none");
+      }
+    });
+  });
+});
 
 function openTab(evt, tab) {
   var i, tabcontent, tablinks;
@@ -45,7 +43,4 @@ function openTab(evt, tab) {
     tablinks[i].classList.remove("active");
   }
   document.getElementById(tab).classList.remove("d-none");
-  evt.currentTarget.className += " active";
 }
-
-document.getElementById("hello").click();
