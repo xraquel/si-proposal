@@ -1,19 +1,21 @@
 .sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 17px;
   width: 306px;
-  // height: 100vh;
   background-color: $black;
 
   height: 100%;
-  position: fixed;
-  z-index: 1;
+  z-index: 10;
 
   overflow-x: hidden;
 
   &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     padding: 25px 0;
     border-bottom: 1px solid #313C4E;
   }
@@ -94,6 +96,36 @@
         }
       }
     }
+
+    &.active {
+      color: $brand-color;
+      
+      .sidebar-link-icon {
+        &--one {
+          background-image: url("../../assets/images/icon-hello-there-2.png");
+        }
+        
+        &--two {
+          background-image: url("../../assets/images/icon-about-us-2.png");
+        }
+        
+        &--three {
+          background-image: url("../../assets/images/icon-learn-2.png");
+        }
+
+        &--four {
+          background-image: url("../../assets/images/icon-our-works-2.png");
+        }
+
+        &--five {
+          background-image: url("../../assets/images/icon-our-services-2.png");
+        }
+
+        &--six {
+          background-image: url("../../assets/images/icon-contact-2.png");
+        }
+      }
+    }
   }
 
   &-dropdown-link {
@@ -109,6 +141,7 @@
     letter-spacing: 0.1px;
     color: $white;
 
+    &.active,
     &:hover {
       color: $brand-color;
     }
@@ -123,7 +156,51 @@
   }
 
   .dropdown-container {
-    display: none;
     margin-left: 55px;
+  }
+
+  @include respond-to(md) {
+    width: 230px;
+
+    &-logo {
+      padding: 20px 0;
+      width: 180px;
+    }
+
+    &-link {
+      height: 50px;
+      font-size: 13px;
+    }
+
+    &-link-icon {
+      margin-right: 15px;
+    }
+
+    &-dropdown-link {
+      font-size: 11px;
+    }
+
+    .dropdown-container {
+      margin-left: 40px;
+    }
+  }
+
+  @include respond-to(sm-down) {
+    transform: translateX(-100%);
+    transition: transform .4s ease;
+
+    &.open {
+      transform: translateX(0%);
+    }
+  }
+}
+
+
+.navbar {
+  z-index: 5;
+  background: $black;
+
+  &-brand img {
+    width: 35px;
   }
 }

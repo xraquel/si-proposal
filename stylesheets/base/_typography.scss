@@ -20,18 +20,12 @@ a {
   color: $brand-color;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 48px;
-  color: $brand-color;
-  line-height: 128%;
-}
-
+h1,
 h2 {
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 67px;
+  font-weight: 600;
+  font-size: 48px;
   color: $black;
+  line-height: 128%;
 }
 
 h3 {
@@ -43,9 +37,12 @@ h3 {
 }
 
 p {
-  font-weight: 400;
+  font-family: $font-gotham;
   font-size: 18px;
-  line-height: 29px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: $black;
 }
 
 .small-title {
@@ -63,7 +60,18 @@ p {
 strong,
 p > strong {
   font-weight: 600;
-  color: $black;
+}
+
+.text-pink {
+  color: $brand-color;
+}
+
+.section-subtitle {
+  font-family: $font-gotham;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
 }
 
 @include respond-to(lg-down) {

@@ -140,3 +140,179 @@ input[type="text"] {
     display: none;
   }
 }
+
+.highlight-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  padding: 30px;
+  width: 455px;
+  height: 173px;
+
+  background: $black;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: -14px;
+    width: 455px;
+    height: 173px;
+  
+    border: 2px solid $black;
+  }
+
+  &-icon {
+    margin-right: 28px;
+    width: 53px;
+  }
+
+  &-text p {
+    margin-bottom: 17px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: $white;
+  }
+
+  &.card-column {
+    flex-direction: column;
+    padding: 20px 25px 33px 38px;
+    margin-left: 5px;
+    width: 270px;
+    height: 100%;
+
+    &:after {
+      right: -20px;
+      width: 270px;
+      height: 100%;
+      border-width: 3px;
+    }
+
+    .highlight-card-icon {
+      margin-right: 0;
+      margin-bottom: 35px;
+    }
+
+    .highlight-card-text p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.item-holder {
+  display: flex;
+  align-items: center;
+
+  padding: 25px 40px;
+  margin-bottom: 45px;
+  width: 100%;
+  max-width: 443px;
+  height: 131px;
+
+  background: #EDF0F1;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  p {
+    font-family: $font-gotham;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+  }
+
+  .item-icon {
+    margin-right: 45px;
+    width: 100%;
+    max-width: 65px;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .1s ease;
+
+    &--web-design {
+      background-image: url('../../assets/images/works/icon-1.png');
+    }
+
+    &--amazon {
+      background-image: url('../../assets/images/works/icon-2.png');
+    }
+
+    &--social-media {
+      background-image: url('../../assets/images/works/icon-3.png');
+    }
+
+    &--product-development {
+      background-image: url('../../assets/images/works/icon-4.png');
+    }
+
+    &--ad-campaigns {
+      background-image: url('../../assets/images/works/icon-5.png');
+    }
+
+    &--branding {
+      background-image: url('../../assets/images/works/icon-6.png');
+    }
+
+    &--marketing {
+      background-image: url('../../assets/images/services/icon-2.png');
+    }
+
+    &--creative {
+      background-image: url('../../assets/images/services/icon-3.png');
+    }
+  }
+
+  &:hover {
+    background: $brand-color;
+    
+    p {
+      color: $white;
+    }
+
+    .item-icon {
+      &--amazon {
+        background-image: url('../../assets/images/works/icon-2-hover.png');
+      }
+
+      &--product-development {
+        background-image: url('../../assets/images/works/icon-4-hover.png');
+      }
+
+      &--ad-campaigns {
+        background-image: url('../../assets/images/works/icon-5-hover.png');
+      }
+
+      &--branding {
+        background-image: url('../../assets/images/works/icon-6-hover.png');
+      }
+      
+      &--marketing {
+        background-image: url('../../assets/images/services/icon-2-hover.png');
+      }
+      
+      &--creative {
+        background-image: url('../../assets/images/services/icon-3-hover.png');
+      }
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 49px;  
+  height: 49px;
+  color: $white;
+  background: #333;
+  border-radius: 50%;
+  @include boxshadow(0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2));
+
+  &:after {
+    font-size: 20px;
+  }
+}
