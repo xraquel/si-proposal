@@ -236,35 +236,35 @@ input[type="text"] {
     transition: all .1s ease;
 
     &--web-design {
-      background-image: url('../../assets/images/works/icon-1.png');
+      background-image: url('../assets/images/works/icon-1.png');
     }
 
     &--amazon {
-      background-image: url('../../assets/images/works/icon-2.png');
+      background-image: url('../assets/images/works/icon-2.png');
     }
 
     &--social-media {
-      background-image: url('../../assets/images/works/icon-3.png');
+      background-image: url('../assets/images/works/icon-3.png');
     }
 
     &--product-development {
-      background-image: url('../../assets/images/works/icon-4.png');
+      background-image: url('../assets/images/works/icon-4.png');
     }
 
     &--ad-campaigns {
-      background-image: url('../../assets/images/works/icon-5.png');
+      background-image: url('../assets/images/works/icon-5.png');
     }
 
     &--branding {
-      background-image: url('../../assets/images/works/icon-6.png');
+      background-image: url('../assets/images/works/icon-6.png');
     }
 
     &--marketing {
-      background-image: url('../../assets/images/services/icon-2.png');
+      background-image: url('../assets/images/services/icon-2.png');
     }
 
     &--creative {
-      background-image: url('../../assets/images/services/icon-3.png');
+      background-image: url('../assets/images/services/icon-3.png');
     }
   }
 
@@ -277,27 +277,27 @@ input[type="text"] {
 
     .item-icon {
       &--amazon {
-        background-image: url('../../assets/images/works/icon-2-hover.png');
+        background-image: url('../assets/images/works/icon-2-hover.png');
       }
 
       &--product-development {
-        background-image: url('../../assets/images/works/icon-4-hover.png');
+        background-image: url('../assets/images/works/icon-4-hover.png');
       }
 
       &--ad-campaigns {
-        background-image: url('../../assets/images/works/icon-5-hover.png');
+        background-image: url('../assets/images/works/icon-5-hover.png');
       }
 
       &--branding {
-        background-image: url('../../assets/images/works/icon-6-hover.png');
+        background-image: url('../assets/images/works/icon-6-hover.png');
       }
       
       &--marketing {
-        background-image: url('../../assets/images/services/icon-2-hover.png');
+        background-image: url('../assets/images/services/icon-2-hover.png');
       }
       
       &--creative {
-        background-image: url('../../assets/images/services/icon-3-hover.png');
+        background-image: url('../assets/images/services/icon-3-hover.png');
       }
     }
   }
