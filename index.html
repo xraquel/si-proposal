@@ -12,17 +12,35 @@
 
   <title>Seller Interactive</title>
 
+  <link rel="stylesheet" type="text/css" href="stylesheets/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/main.min.css">
 </head>
 
 <body>
   <main>
+    <nav class="navbar navbar-expand-lg d-md-none">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/si-icon.png" alt="SI Logo" />
+      </a>
+      <button class="navbar-toggler" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
+          <title>Menu</title>
+          <path stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+      </button>
+    </nav>
+
     <div class="sidebar">
       <div class="sidebar-logo">
         <img src="assets/images/si-logo.png" alt="SI Logo" />
+        <span class="btn-close d-md-none">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+            <line x1="15" y1="15" x2="25" y2="25" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10"></line>
+            <line x1="25" y1="15" x2="15" y2="25" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10"></line>   
+          </svg>
+        </span>
       </div>
       <div class="sidebar-nav">
-        <a href="#" class="sidebar-link" onclick="openTab(event, 'hello')"> 
+        <a href="#" class="sidebar-link active" onclick="openTab(event, 'hello')"> 
           <span class="sidebar-link-icon sidebar-link-icon--one"></span>
           Hello There!
         </a>
@@ -34,31 +52,31 @@
           <span class="sidebar-link-icon sidebar-link-icon--three"></span>
           What We've Learned
         </a>
-        <a href="#" class="sidebar-link dropdown-btn">
+        <a href="#" class="sidebar-link dropdown-btn" onclick="openTab(event, 'works')">
           <span class="sidebar-link-icon sidebar-link-icon--four"></span>
           Our Works 
           <i class="fa fa-angle-down"></i>
         </a>
-        <div class="sidebar-dropdown dropdown-container">
-          <a href="#" class="sidebar-dropdown-link">Web Design</a>
-          <a href="#" class="sidebar-dropdown-link">Social Media Design</a>
-          <a href="#" class="sidebar-dropdown-link">Ad Campaigns</a>
-          <a href="#" class="sidebar-dropdown-link">Amazon</a>
-          <a href="#" class="sidebar-dropdown-link">Product Development</a>
-          <a href="#" class="sidebar-dropdown-link">Branding</a>
+        <div class="sidebar-dropdown dropdown-container d-none works-dropdown">
+          <a href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'web-design')">Web Design</a>
+          <a href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'social-media')">Social Media Design</a>
+          <a href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'ad-campaigns')">Ad Campaigns</a>
+          <a href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'amazon-listings')">Amazon</a>
+          <a href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'product-development')">Product Development</a>
+          <a href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'branding')">Branding</a>
         </div>
-        <a href="#" class="sidebar-link dropdown-btn">
+        <a href="#" class="sidebar-link dropdown-btn" onclick="openTab(event, 'services')">
           <span class="sidebar-link-icon sidebar-link-icon--five"></span>
           Our Services 
           <i class="fa fa-angle-down"></i>
         </a>
-        <div class="sidebar-dropdown dropdown-container">
+        <div class="sidebar-dropdown dropdown-container d-none">
           <a href="#" class="sidebar-dropdown-link">Amazon</a>
           <a href="#" class="sidebar-dropdown-link">Growth Marketing</a>
           <a href="#" class="sidebar-dropdown-link">Creative Design & Brand Building</a>
           <a href="#" class="sidebar-dropdown-link">Product Development</a>
         </div>
-        <a href="#" class="sidebar-link">
+        <a href="#" class="sidebar-link" onclick="openTab(event, 'contact')">
           <span class="sidebar-link-icon sidebar-link-icon--six"></span>
           Contact Us
         </a>
@@ -72,6 +90,7 @@
   <script src="javascripts/vendors/jquery.min.js"></script>
   <script src="javascripts/vendors/tether.min.js"></script>
   <script src="javascripts/vendors/bootstrap.min.js"></script>
+  <script src="javascripts/vendors/swiper.min.js"></script>
   <script src="javascripts/main.min.js"></script>
 </body>
 </html>
