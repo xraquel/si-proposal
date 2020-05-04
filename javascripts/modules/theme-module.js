@@ -1,5 +1,7 @@
 $(function() {
-  $("#hello").trigger("click");
+  $(window).on('load', function() {
+    $("#intro").trigger("click").addClass('active');
+  });
 
   $(".navbar-toggler").click(function() {
     $('.sidebar').toggleClass('open');
@@ -10,6 +12,11 @@ $(function() {
   });
 
   $('.works-dropdown a').click(function() {
+    $(this).siblings().removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('.sidebar-link').click(function() {
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
   });
