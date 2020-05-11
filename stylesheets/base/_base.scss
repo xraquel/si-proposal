@@ -64,29 +64,38 @@ input[type="text"] {
   align-items: center;
   justify-content: center;
 
-  padding: 0 45px;
-  height: 45px;
+  padding: 0 40px;
+  height: 60px;
   
   font-family: $font-gotham;
-  // font-weight: 800;
   font-weight: 600;
-  text-transform: uppercase;
-
   border-radius: 36px;
+
+  i {
+    margin-left: 10px;
+  }
 
   &-primary {
     color: $white;
 
-    font-size: 13.5px;
-    letter-spacing: 2px;
+    font-size: 16px;
     line-height: 20px;
+    letter-spacing: 0.005em;
+
     background-color: $brand-color;
     border-color: $brand-color;
 
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+      color: $white;
+      background-color: $black;
+      border-color: $black;
+    }
+
     @include on-event {
-      color: $brand-color;
-      background-color: $white;
-      border-color: $white;
+      color: $white;
+      background-color: $black;
+      border-color: $black;
     }
   }
 
@@ -315,4 +324,27 @@ input[type="text"] {
   &:after {
     font-size: 20px;
   }
+}
+
+.project-title {
+  margin-bottom: 25px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: $black;
+}
+
+.project-description {
+  margin-bottom: 45px;
+  width: 100%;
+  min-width: 240px;
+  max-width: 300px;
+  
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: $black;
 }

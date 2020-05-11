@@ -72,3 +72,48 @@
     } 
   }
 }
+
+.portfolio-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-top: 45px;
+  width: 617px;
+  height: fit-content;
+
+  img {
+    margin-bottom: 25px;
+    max-width: 617px;
+    width: 100%;
+    object-position: cover;
+    @include boxshadow(0px 10px 16px -13px rgba($black, 0.75));
+  }
+
+  &.grid-images {
+    img {
+      max-width: 290px;
+      height: 290px;
+    }
+  }
+}
+
+.ad-campaign-slider {
+  .portfolio-holder {
+    margin-right: 40px;
+  }
+}
+
+.single-holder {
+  margin-top: 45px;
+}
+
+.fluid-holder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 45px;
+  width: 93%;
+}
