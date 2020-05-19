@@ -1,0 +1,41 @@
+#product-development {
+  .img-first {
+    flex: 0 0 40%;
+    width: 40%;
+    max-width: 356px;
+  }
+
+  .img-second {
+    flex: 0 0 60%;
+    width: 60%;
+    max-width: 540px;
+  }
+
+  @include respond-to(md-down) {
+    .swiper-wrapper {
+      height: auto;
+    }
+
+    .fluid-holder {
+      flex-direction: column;
+
+      .img-fluid {
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .img-first {
+        margin-bottom: 25px;
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .img-second {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+  }
+}

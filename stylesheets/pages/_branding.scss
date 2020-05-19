@@ -1,0 +1,49 @@
+#branding {
+  .fluid-holder {
+    margin-right: auto;
+    max-width: 1010px;
+  }
+
+  .img-first {
+    margin-right: 20px;
+    flex: 0 0 70%;
+    width: 70%;
+    max-width: 645px;
+  }
+
+  .img-second {
+    flex: 0 0 30%;
+    width: 30%;
+    max-width: 323px;
+  }
+
+  @include respond-to(md-down) {
+    .swiper-wrapper {
+      margin-top: 40px;
+      height: auto;
+    }
+
+    .fluid-holder {
+      margin-top: 0;
+      flex-direction: column;
+    }
+
+    .img-first,
+    .img-second {
+      margin-right: auto;
+      margin-left: auto;
+      width: 70%;
+    }
+
+    .img-first {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include respond-to(xs) {
+    .img-first,
+    .img-second {
+      width: 90%;
+    }
+  }
+}

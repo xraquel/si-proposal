@@ -40,50 +40,875 @@
         </span>
       </div>
       <div class="sidebar-nav">
-        <a id="intro" href="#" class="sidebar-link active" onclick="openTab(event, 'hello')"> 
+        <a id="intro" href="#intro" class="sidebar-link active" onclick="openTab(event, 'hello')"> 
           <span class="sidebar-link-icon sidebar-link-icon--one"></span>
           Hello There!
         </a>
-        <a href="#" class="sidebar-link" onclick="openTab(event, 'about')">
+        <a id="tab-about" href="#tab-about" class="sidebar-link" onclick="openTab(event, 'about')">
           <span class="sidebar-link-icon sidebar-link-icon--two"></span>
           About Us
         </a>
-        <a href="#" class="sidebar-link" onclick="openTab(event, 'learn')">
+        <a id="tab-learn" href="#tab-learn" class="sidebar-link" onclick="openTab(event, 'learn')">
           <span class="sidebar-link-icon sidebar-link-icon--three"></span>
           What We've Learned
         </a>
-        <a href="#" class="sidebar-link dropdown-btn" onclick="openTab(event, 'works')">
+        <a id="tab-work" href="#tab-work" class="sidebar-link dropdown-btn" onclick="openTab(event, 'works')">
           <span class="sidebar-link-icon sidebar-link-icon--four"></span>
           Our Works 
           <i class="fa fa-angle-down"></i>
         </a>
         <div class="sidebar-dropdown dropdown-container d-none works-dropdown">
-          <a id="tab-web" href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'web-design')">Web Design</a>
-          <a id="tab-social" href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'social-media')">Social Media Design</a>
-          <a id="tab-ad" href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'ad-campaigns')">Ad Campaigns</a>
-          <a id="tab-amazon-listing" href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'amazon-listings')">Amazon</a>
-          <a id="tab-product" href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'product-development')">Product Development</a>
-          <a id="tab-branding" href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'branding')">Branding</a>
+          <a id="tab-web" href="#tab-web" class="sidebar-dropdown-link" onclick="openTab(event, 'web-design')">Web Design</a>
+          <a id="tab-social" href="#tab-social" class="sidebar-dropdown-link" onclick="openTab(event, 'social-media')">Social Media Design</a>
+          <a id="tab-ad" href="#tab-ad" class="sidebar-dropdown-link" onclick="openTab(event, 'ad-campaigns')">Ad Campaigns</a>
+          <a id="tab-amazon-listing" href="#tab-amazon-listing" class="sidebar-dropdown-link" onclick="openTab(event, 'amazon-listings')">Amazon</a>
+          <a id="tab-product" href="#tab-product" class="sidebar-dropdown-link" onclick="openTab(event, 'product-development')">Product Development</a>
+          <a id="tab-branding" href="#tab-branding" class="sidebar-dropdown-link" onclick="openTab(event, 'branding')">Branding</a>
         </div>
-        <a href="#" class="sidebar-link dropdown-btn" onclick="openTab(event, 'services')">
+        <a id="tab-service" href="#tab-service" class="sidebar-link dropdown-btn" onclick="openTab(event, 'services')">
           <span class="sidebar-link-icon sidebar-link-icon--five"></span>
           Our Services 
           <i class="fa fa-angle-down"></i>
         </a>
         <div class="sidebar-dropdown dropdown-container d-none services-dropdown">
-          <a id="tab-amazon" href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'amazon')">Amazon</a>
-          <a id="tab-marketing" href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'growth-marketing')">Growth Marketing</a>
-          <a id="tab-creative" href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'creative-design')">Creative Design & Brand Building</a>
-          <a id="tab-product-services" href="#" class="sidebar-dropdown-link" onclick="openTab(event, 'product-services')">Product Development</a>
+          <a id="tab-amazon" href="#tab-amazon" class="sidebar-dropdown-link" onclick="openTab(event, 'amazon')">Amazon</a>
+          <a id="tab-marketing" href="#tab-marketing" class="sidebar-dropdown-link" onclick="openTab(event, 'growth-marketing')">Growth Marketing</a>
+          <a id="tab-creative" href="#tab-creative" class="sidebar-dropdown-link" onclick="openTab(event, 'creative-design')">Creative Design & Brand Building</a>
+          <a id="tab-product-services" href="#tab-product-services" class="sidebar-dropdown-link" onclick="openTab(event, 'product-services')">Product Development</a>
         </div>
-        <a href="#" class="sidebar-link" onclick="openTab(event, 'contact')">
+        <a id="tab-contact" href="#tab-contact" class="sidebar-link" onclick="openTab(event, 'contact')">
           <span class="sidebar-link-icon sidebar-link-icon--six"></span>
           Contact Us
         </a>
       </div>
     </div>
 
-    <div class="section" w3-include-html="section.html"></div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div id="hello" class="tab-content d-none">
+              <h1 class="section-title">Hello There<span class="text-pink">.</span></h1>
+              <img class="section-featured-image" src="./assets/images/intro/hello-there.png" alt="Hello There">
+      
+              <div class="highlight-card">
+                <img class="highlight-card-icon" src="./assets/images/intro/lightbulb.png" alt="Did you know?">
+                <div class="highlight-card-text">
+                  <p>Did you know that Seller Interactive isn’t just a Full Service Amazon Marketing Company?</p>
+                  
+                  <p class="font-bold">We are also an Internet and Digital Marketing Company!</p>
+                </div>
+              </div>
+      
+              <div class="section-content">
+                <p>
+                  We help brands build loyalty and trust in an industry that’s extremely cluttered and competitive. 
+                  Our thought-provoking and customized strategies have allowed us to grow our brands to over $10 million
+                  in annual revenue in under 5 years!
+                </p>
+                <p>
+                  We’ve taken all the things we learned, mistakes we’ve made and trimmed the fat to create this effective 
+                  marketing and brand building platform to clients of all sizes: solopreneurs, partnerships, start-ups, 
+                  local businesses and enterprises. We focus on straightforward true and tried methods to minimize costs 
+                  and to ensure results. 
+                </p>
+                <p>
+                  We can help you cut through the noise, find your audience and deliver your brand story at it's best. 
+                  We are dedicated to authentic brand stories and use journalistic methods to create the largest 
+                  possible value for both your budget and your audience.
+                </p>
+               
+                <br>
+               
+                <p class="font-bold mt-2">We’ve got you covered for all your design needs:</p>
+                <ul class="service-list list-unstyled">
+                  <li>Web Design</li>
+                  <li>Product Launch</li>
+                  <li>E-commerce</li>
+                  <li>Google &amp; PPC Services</li>
+                  <li>Branding</li>
+                  <li>Social Media Marketing</li>
+                  <li>SEO Services</li>
+                  <li>Content &amp; Email Marketing</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div id="about" class="tab-content d-none">
+              <h2 class="section-title">About Us<span class="text-pink">.</span></h2>
+      
+              <div class="section-wrapper">
+                <div class="section-row">
+                  <div class="section-icon">
+                    <img src="./assets/images/about/icon-1.png" alt="Icon 1">
+                  </div>
+                  <p class="section-text">
+                    Starting with a few thousand dollars in 2014, we have gone through all the mistakes 
+                    possible in the world of Amazon ranging from account and listing suspensions to 
+                    containers being turned away at the port. After countless episodes of ups and downs, 
+                    we have emerged victorious—the combined annual revenues of our own brands have recently 
+                    surpassed 8 figures.
+                  </p>
+                </div>
+                
+                <div class="section-row">
+                  <div class="section-icon">
+                    <img src="./assets/images/about/icon-2.png" alt="Icon 2">
+                  </div>
+                  <p class="section-text">
+                    We often get asked why we want to help others sell well on Amazon. Why not just keep 
+                    selling more of our products? We always respond the same way—Why not do both? 
+                    We continue to sell our own products.
+                  </p>
+                </div>
+                
+                <div class="section-row">
+                  <div class="section-icon">
+                    <img src="./assets/images/about/icon-3.png" alt="Icon 3">
+                  </div>
+                  <p class="section-text">
+                    But there are countless great products out there that can positively impact the masses 
+                    if they are manages and marketed well on Amazon. There is a strong and growing need for 
+                    authentic Amazon expertise and full Amazon account management. If we can repeatedly start 
+                    and grow e-commerce brands on the Amazon platform and succeed, then there is no reason 
+                    why we cannot help others do the same thing.
+                  </p>
+                </div>
+                
+                <div class="section-row">
+                  <div class="section-icon">
+                    <img src="./assets/images/about/icon-4.png" alt="Icon 4">
+                  </div>
+                  <p class="section-text">
+                    Over the years, we have gained much experience and expertise and developed great teams 
+                    and systems to be in a position to offer great value to others. It made perfect sense 
+                    for us (it’s a win-win situation) to do the tasks that we are really good at - selling 
+                    on Amazon well - in partnership with physical product brands that are not familiar or 
+                    adept at selling on Amazon. If your products can do well outside Amazon, we guarantee 
+                    it will do well in Amazon with our help!
+                  </p>
+                </div>
+      
+                <div class="section-row">
+                  <div class="section-icon">
+                    <img src="./assets/images/about/icon-5.png" alt="Icon 5">
+                  </div>
+                  <p class="section-text">
+                    Amazon is a foreign jungle with its own rules and secrets- and it takes a lot of time, 
+                    effort, resources and trial and error to navigate your way successfully alone. You need 
+                    a guide - someone who has successfully done exactly what you are trying to achieve.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div id="learn" class="tab-content d-none">
+              <h2 class="section-title">What We've <br>Learned<span class="text-pink">.</span></h2>
+              <img class="section-featured-image" src="./assets/images/learn/featured-image.png" alt="What We've Learned">
+      
+              <div class="section-content">
+                <p>For new launches and clients in the growth phase, we help drive traffic to your brands, 
+                  we help reduce costs and increase profits. For businesses, that are in decline, we analyze 
+                  and strategize to revive or rebrand. We have an increasing number of clients in the early 
+                  stages that simply have a product with little to no brand and internet / social presence. 
+                  Although we’re gradually increasing revenue on the Amazon sales channel, the growth rate 
+                  for these clients is slow and limited.
+                </p>
+        
+                <p>Our best performers are clients that are investing marketing dollars on brand building 
+                  outside of Amazon. As such, we have expanded our services beyond the scope of Amazon. 
+                  There is a real need for branding services from our existing clients. Chances are, 
+                  like our clients, you probably share similarities and have hit these milestones and 
+                  roadblocks in growing your business. You ended up here because you’re somewhere along 
+                  that business cycle curve and need customized help to grow your brand and business - 
+                  look no further, we’ve got you covered!
+                </p>
+              </div>
+      
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div class="highlight-card card-column">
+                    <img class="highlight-card-icon" src="./assets/images/learn/icon-chart.png" alt="Chart">
+                    <div class="highlight-card-text">
+                      <p>Our portfolio consists of clients at different stages of the business cycle:</p>
+                      
+                      <p class="font-bold">Launch, growth, shake-out, maturity & decline. Our services add value to your business no matter what phase you are at in the business cycle.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <div class="chart-holder">
+                    <img src="./assets/images/learn/chart.png" alt="Chart">
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div id="works" class="tab-content d-none">
+              <h2 class="section-title">Our Works<span class="text-pink">.</span></h2>
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="item-holder js-child-page" data-id="#tab-web">
+                    <span class="item-icon item-icon--web-design"></span>
+                    <p>Web Design</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="item-holder js-child-page" data-id="#tab-amazon-listing">
+                    <span class="item-icon item-icon--amazon"></span>
+                    <p>Amazon</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="item-holder js-child-page" data-id="#tab-social">
+                    <span class="item-icon item-icon--social-media"></span>
+                    <p>Social Media Design</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="item-holder js-child-page" data-id="#tab-product">
+                    <span class="item-icon item-icon--product-development"></span>
+                    <p>Product Development</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="item-holder js-child-page" data-id="#tab-ad">
+                    <span class="item-icon item-icon--ad-campaigns"></span>
+                    <p>Ad Campaigns</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="item-holder js-child-page" data-id="#tab-branding">
+                    <span class="item-icon item-icon--branding"></span>
+                    <p>Branding</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div id="services" class="tab-content d-none">
+              <h2 class="section-title">Our Services<span class="text-pink">.</span></h2>
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="item-holder js-child-page" data-id="#tab-amazon">
+                    <span class="item-icon item-icon--amazon"></span>
+                    <p>Amazon</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="item-holder js-child-page" data-id="#tab-marketing">
+                    <span class="item-icon item-icon--marketing"></span>
+                    <p>Growth Marketing</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="item-holder js-child-page" data-id="#tab-creative">
+                    <span class="item-icon item-icon--creative"></span>
+                    <p>Creative Design & Brand Building</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="item-holder js-child-page" data-id="#tab-product-services">
+                    <span class="item-icon item-icon--product-development"></span>
+                    <p>Product Development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div id="contact" class="tab-content d-none">
+              <h2 class="section-title">Let's Talk<span class="text-pink">.</span></h2>
+              <p class="section-subtitle">GET A FREE CONSULTATION.</p>
+              <img class="section-featured-image" src="./assets/images/contact/contact-us.png" alt="Contact Us">
+              <ul class="list-unstyled">
+                <li class="list-item">
+                  <img src="./assets/images/contact/icon-email.png" alt="Email" />
+                  hello@sellerinteractive
+                </li>
+                <li class="list-item">
+                  <img src="./assets/images/contact/icon-web.png" alt="Web" />
+                  sellerinteractive.com
+                </li>
+                <li class="list-item">
+                  <img src="./assets/images/contact/icon-phone.png" alt="Phone" />
+                  1-800-820-3746
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="works-wrapper" class="container-fluid d-none">
+        <div class="row">
+          <div class="col-12">
+            <div id="web-design" class="tab-content slider-tab d-none">
+              <div class="web-design-slider swiper-container">
+                <h2 class="section-title">Web Design<span class="text-pink">.</span></h2>
+      
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="project-holder">
+                      <p class="project-title">Kitchables</p>
+                      <p class="project-description">
+                        Kitchables believes that you deserve to treat yourself and your loved ones to 
+                        fine coffee and tea made through a meticulous however uncomplicated method.
+                      </p>
+      
+                      <a href="" class="btn btn-primary">Visit Website &nbsp;<i class="fa fa-arrow-right"></i></a>
+                    </div>
+      
+                    <div class="image-holder">
+                      <img class="img-fluid" src="assets/images/works/web-design/img-kitchables.png" alt="Kitchables" />
+                    </div>
+                  </div>
+      
+                  <div class="swiper-slide">
+                    <div class="project-holder">
+                      <p class="project-title">Flux Lashes</p>
+                      <p class="project-description">
+                        Here at Flux, we treat each client like royalty. We guarantee that we offer the best 
+                        lash and brow services with the highest quality standards possible in the industry.
+                      </p>
+      
+                      <a href="" class="btn btn-primary">Visit Website &nbsp;<i class="fa fa-arrow-right"></i></a>
+                    </div>
+      
+                    <div class="image-holder">
+                      <img class="img-fluid" src="assets/images/works/web-design/img-flux.png" alt="Flux Lashes" />
+                    </div>
+                  </div>
+      
+                  <div class="swiper-slide">
+                    <div class="project-holder">
+                      <p class="project-title">Outgive</p>
+                      <p class="project-description">
+                        We are a group of driven individuals with a love for growth and community making the most 
+                        of the resources and opportunities this world has to offer..
+                      </p>
+      
+                      <a href="" class="btn btn-primary">Visit Website &nbsp;<i class="fa fa-arrow-right"></i></a>
+                    </div>
+      
+                    <div class="image-holder">
+                      <img class="img-fluid" src="assets/images/works/web-design/img-outgive.png" alt="Outgive" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+      
+            <div id="social-media" class="tab-content slider-tab d-none">
+              <div class="social-media-slider swiper-container">
+                <h2 class="section-title">Social Media Design<span class="text-pink">.</span></h2>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="portfolio-holder grid-images">
+                        <img class="img-fluid" src="assets/images/works/social-media/sm-flux-1.jpg" alt="Flux">
+                        <img class="img-fluid" src="assets/images/works/social-media/sm-flux-2.jpg" alt="Flux">
+                        <img class="img-fluid" src="assets/images/works/social-media/sm-flux-3.jpg" alt="Flux">
+                        <img class="img-fluid" src="assets/images/works/social-media/sm-flux-4.jpg" alt="Flux">
+                    </div>
+                    <div class="portfolio-single">
+                      <img class="img-fluid" src="assets/images/works/social-media/sm-flux.png" alt="Flux">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="portfolio-holder">
+                        <img class="img-fluid" src="assets/images/works/social-media/sm-stallion-1.jpg" alt="Stallion">
+                        <img class="img-fluid" src="assets/images/works/social-media/sm-stallion-2.jpg" alt="Stallion">
+                    </div>
+                    <div class="portfolio-single">
+                      <img class="img-fluid" src="assets/images/works/social-media/sm-stallion.png" alt="Stallion">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="portfolio-holder grid-images">
+                        <img class="img-fluid" src="assets/images/works/social-media/sm-ashtonbee-1.jpg" alt="Ashtonbee">
+                        <img class="img-fluid" src="assets/images/works/social-media/sm-ashtonbee-2.png" alt="Ashtonbee">
+                        <img class="img-fluid" src="assets/images/works/social-media/sm-ashtonbee-3.jpg" alt="Ashtonbee">
+                        <img class="img-fluid" src="assets/images/works/social-media/sm-ashtonbee-4.png" alt="Ashtonbee">
+                    </div>
+                    <div class="portfolio-single">
+                      <img class="img-fluid" src="assets/images/works/social-media/sm-ashtonbee.png" alt="Ashtonbee">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+      
+            <div id="ad-campaigns" class="tab-content slider-tab d-none">
+              <div class="ad-campaign-slider swiper-container">
+                <h2 class="section-title">Ad Campaign<span class="text-pink">.</span></h2>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="single-holder">
+                      <img class="img-fluid" src="assets/images/works/ad-campaign/si-ad.png" alt="Ad Campaign">
+                    </div>
+                    <div class="portfolio-holder grid-images">
+                        <img class="img-fluid" src="assets/images/works/ad-campaign/si-1.png" alt="Ad Campaign">
+                        <img class="img-fluid" src="assets/images/works/ad-campaign/si-2.png" alt="Ad Campaign">
+                        <img class="img-fluid" src="assets/images/works/ad-campaign/si-3.png" alt="Ad Campaign">
+                        <img class="img-fluid" src="assets/images/works/ad-campaign/si-4.png" alt="Ad Campaign">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="single-holder">
+                      <img class="img-fluid" src="assets/images/works/ad-campaign/si-ad-2.png" alt="Ad Campaign">
+                    </div>
+                    <div class="portfolio-holder grid-images">
+                        <img class="img-fluid" src="assets/images/works/ad-campaign/hh-1.png" alt="Ad Campaign">
+                        <img class="img-fluid" src="assets/images/works/ad-campaign/hh-2.png" alt="Ad Campaign">
+                        <img class="img-fluid" src="assets/images/works/ad-campaign/hh-3.png" alt="Ad Campaign">
+                        <img class="img-fluid" src="assets/images/works/ad-campaign/hh-4.png" alt="Ad Campaign">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+      
+            <div id="amazon-listings" class="tab-content slider-tab d-none">
+              <div class="amazon-listing-slider swiper-container">
+                <h2 class="section-title">Amazon Listing<span class="text-pink">.</span></h2>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="single-holder">
+                      <img class="img-fluid" src="assets/images/works/amazon/amazon-1.png" alt="Amazon">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="single-holder">
+                      <img class="img-fluid" src="assets/images/works/amazon/amazon-2.png" alt="Amazon">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="single-holder">
+                      <img class="img-fluid" src="assets/images/works/amazon/amazon-3.png" alt="Amazon">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+      
+            <div id="product-development" class="tab-content slider-tab d-none">
+              <div class="product-development-slider swiper-container">
+                <h2 class="section-title">Product Development<span class="text-pink">.</span></h2>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fluid-holder">
+                      <img class="img-fluid img-first" src="assets/images/works/product-development/product-chair.png" alt="Chair">
+                      <img class="img-fluid img-second" src="assets/images/works/product-development/chair.png" alt="Chair">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fluid-holder">
+                      <img class="img-fluid img-first" src="assets/images/works/product-development/product-playpen.png" alt="Playpen">
+                      <img class="img-fluid img-second" src="assets/images/works/product-development/playpen.png" alt="Playpen">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+      
+            <div id="branding" class="tab-content slider-tab d-none">
+              <div class="branding-slider swiper-container">
+                <h2 class="section-title">Branding<span class="text-pink">.</span></h2>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fluid-holder">
+                      <img class="img-fluid img-first" src="assets/images/works/branding/outgive-1.png" alt="Outgive">
+                      <img class="img-fluid img-second" src="assets/images/works/branding/outgive-2.png" alt="Outgive">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fluid-holder">
+                      <img class="img-fluid img-first" src="assets/images/works/branding/stallion-1.png" alt="Stallion">
+                      <img class="img-fluid img-second" src="assets/images/works/branding/stallion-2.png" alt="Stallion">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="services-wrapper" class="container-fluid d-none">
+        <div class="row">
+          <div class="col-12">
+            <div id="amazon" class="tab-content slider-tab d-none">
+              <div class="amazon-slider swiper-container">
+                <h2 class="section-title">Amazon<span class="text-pink">.</span></h2>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="amazon-holder">
+                      <img src="./assets/images/services/amazon/amazon-1.png" alt="Amazon">
+                      <div class="d-flex align-items-center">
+                        <span class="amazon-number">01</span>
+                        <p class="amazon-title">Full Account Management</p>
+                      </div>
+                      <div class="amazon-content">
+                        <p>
+                          Our team at Seller Interactive will provide you a comprehensive 
+                          approach in Amazon support handling, inventory management, optimizing 
+                          the customer service experience and protecting your seller account 
+                          health in all aspects.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="amazon-holder">
+                      <img src="./assets/images/services/amazon/amazon-2.png" alt="Amazon">
+                      <div class="d-flex align-items-center">
+                        <span class="amazon-number">02</span>
+                        <p class="amazon-title">Ongoing Listing Optimization</p>
+                      </div>
+                      <div class="amazon-content">
+                        <p>
+                          Never have a “Set it and Forget it” strategy. Our Amazon experts 
+                          will monitor, tweak and improve your listings, so you can just 
+                          focus on creating quality products and scaling your business.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="amazon-holder">
+                      <img src="./assets/images/services/amazon/amazon-3.png" alt="Amazon">
+                      <div class="d-flex align-items-center">
+                        <span class="amazon-number">03</span>
+                        <p class="amazon-title">Sponsored Ad Management (PPC)</p>
+                      </div>
+                      <div class="amazon-content">
+                        <p>
+                          In a very competitive online marketplace, taking full advantage 
+                          of Sponsored ads will give you the edge against your competitors. 
+                          Not using the PPC feature deals more damage to your business, 
+                          rather than you using it.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="amazon-holder">
+                      <img src="./assets/images/services/amazon/amazon-4.png" alt="Amazon">
+                      <div class="d-flex align-items-center">
+                        <span class="amazon-number">04</span>
+                        <p class="amazon-title">Amazon SEO</p>
+                      </div>
+                      <div class="amazon-content">
+                        <p>
+                          From optimizing your titles, product descriptions and to your 
+                          back-end kerwords, every word must provide visibility and value 
+                          to your target customers. We find the most profitable keywords 
+                          that will get more search traffic to your products
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="amazon-holder">
+                      <img src="./assets/images/services/amazon/amazon-5.png" alt="Amazon">
+                      <div class="d-flex align-items-center">
+                        <span class="amazon-number">05</span>
+                        <p class="amazon-title">Brand Registry, Brand Page, A+ Content</p>
+                      </div>
+                      <div class="amazon-content">
+                        <p>
+                          We want to keep your minds at ease, by providing the information 
+                          and assistance you need to protect your brand and listings. 
+                          Having brand registry grants the privilege of creating a brand 
+                          page and A+ Content (formerly EBC) to help you stand out from the crowd.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="amazon-holder">
+                      <img src="./assets/images/services/amazon/amazon-6.png" alt="Amazon">
+                      <div class="d-flex align-items-center">
+                        <span class="amazon-number">06</span>
+                        <p class="amazon-title">Product Launch Service</p>
+                      </div>
+                      <div class="amazon-content">
+                        <p>
+                          With the amount of experience of our Seller Interactive professionals, 
+                          we can relieve you from the pitfalls and struggles of having a failed 
+                          product launch. Dominate on Amazon immediately.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="amazon-holder">
+                      <img src="./assets/images/services/amazon/amazon-7.png" alt="Amazon">
+                      <div class="d-flex align-items-center">
+                        <span class="amazon-number">07</span>
+                        <p class="amazon-title">Systematic Reimbursement</p>
+                      </div>
+                      <div class="amazon-content">
+                        <p>
+                          One of the challenges and headaches of being an Amazon Seller is 
+                          experiencing inventory damages, incorrect fee charges, inventory 
+                          replenishment discrepancies and eventually dealing with Amazon on 
+                          reconciling these issues. This takes up valuable time and effort.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+      
+            <div id="growth-marketing" class="tab-content slider-tab d-none">
+              <div class="growth-slider swiper-container">
+                <h2 class="section-title">Growth Marketing<span class="text-pink">.</span></h2>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="row">
+                      <div class="col-12 col-lg-5">
+                        <img class="section-featured-image" src="assets/images/services/growth/seo.png" alt="SEO" />
+                      </div>
+                      <div class="col-12 col-lg-7">
+                        <div class="section-content">
+                          <h5>SEO</h5>
+                          <p>
+                            An effective SEO strategy requires both on-page and off-page activities. 
+                            On-page SEO involves anything on your website which you control: content, 
+                            structure of information, mobile experience, page load speed, and keyword 
+                            optimization. Off-page SEO is the strategy you use to impact the relationship 
+                            between related websites that reference your own. This means websites linking 
+                            to you, referral traffic, social sharing, and brand mentions. Good SEO starts 
+                            with an effective strategy. This means producing content that is optimized for 
+                            your audience (on-page), then actively increasing the online visibility of 
+                            your business through content marketing, PR, and engagement (off-page).
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide-even">
+                    <div class="row">
+                      <div class="col-12 col-lg-6">
+                        <div class="section-content">
+                          <h5>Social Media Marketing & Management</h5>
+                          <p>
+                            The social media space is extremely crowded. Having active social media 
+                            campaigns is vital to the success of your brand and business. We begin 
+                            with a complete audit of your current social media profiles and provide 
+                            a detailed report that outlines competitor and audience insights, and 
+                            areas of opportunity. We then create and optimized marketing strategy 
+                            based on your audience’s interests, behaviours, and preffered social 
+                            media platform. It requires a specialized skill set that is unique 
+                            to social marketing -- we engage your users with compelling content 
+                            and refreshing designs that would be developed through intensive 
+                            research. Our campaign approach is to increase traffic, user engagement, 
+                            brand awareness and trust.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6">
+                        <img class="section-featured-image" src="assets/images/services/growth/social-media.png" alt="Social Media" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                        <img class="section-featured-image" src="assets/images/services/growth/ppc.png" alt="PPC" />
+      
+                        <div class="highlight-card card-column">
+                          <img class="highlight-card-icon" src="./assets/images/services/growth/icon-quote.png" alt="Quote">
+                          <div class="highlight-card-text">
+                            <p>
+                              Generally, our #1 goal is to get the most out of your paid search campaigns. 
+                              Whether this is done by writing great ads that connect with your ideals 
+                              customers or optimizing the campaigns so they can run at the highest level, 
+                              our team of PPC specialists ensure that your ads are performing well.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-8">
+                        <div class="section-content">
+                          <h5>Pay Per Click Advertising (PPC)</h5>
+                          <p>
+                            Pay-per-click marketing is one of the most powerful internet marketing 
+                            tools. Consumers use search engines to research, find and purchase 
+                            products and services—it has become a necessary survival tool for most 
+                            of the world’s population. Can you imagine a world without Google or 
+                            it’s equivalents? As such, brands and businesses use paid ads as the 
+                            quickest and easiest way of getting their company, product or service 
+                            on the first page of search engines like Google.
+                          </p>
+                          <br>
+                          <p>
+                            Our PPC Advertising campaign strategies are designed to meet your needs 
+                            and goals. Some clients prioritize top line sales while others prioritize 
+                            profits/ROI. There isn’t a one size fits all strategy and each brand and 
+                            business will have different strategies.
+                          </p>
+                          <br>
+                          <p>
+                            Generally, our #1 goal is to get the most out of your paid search 
+                            campaigns. Whether this is done by writing great ads that connect 
+                            with your ideal customers or optimizing the campaigns so they can 
+                            run at the highest level, our team of PPC specialists ensure that 
+                            your ads are performing well.
+                          </p>
+                          <br>
+                          <p>
+                            We also focus on remarketing which is a way of connecting with visitors 
+                            to your website who may not have had the intention of making an immediate 
+                            purchase or inquiry. We launch campaigns that focus these leads as they 
+                            browse elsewhere on the internet. These campaigns generally have a higher 
+                            conversion rate as these customers have previously expressed interest in 
+                            your business, product or service— after all, there was a reason for them 
+                            to have come to your website in the first place. This is the most powerful 
+                            and highly cost-effective method of advertising that helps to remind leads 
+                            to purchase your product or service, all while increasing your company’s 
+                            brand awareness.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="row">
+                      <div class="col-12 col-lg-5">
+                        <img class="section-featured-image" src="assets/images/services/growth/content.png" alt="Content & Email Marketing" />
+                      </div>
+                      <div class="col-12 col-lg-7">
+                        <div class="section-content">
+                          <h5>Content & Email Marketing</h5>
+                          <p>
+                            The social media space is extremely crowded. Having active social media 
+                            campaigns is vital to the success of your brand and business. We begin 
+                            with a complete audit of your current social media profiles and provide 
+                            a detailed report that outlines competitor and audience insights, and 
+                            areas of opportunity. We then create and optimized marketing strategy 
+                            based on your audience’s interests, behaviours, and preffered social 
+                            media platform. It requires a specialized skill set that is unique 
+                            to social marketing -- we engage your users with compelling content 
+                            and refreshing designs that would be developed through intensive 
+                            research. Our campaign approach is to increase traffic, user engagement, 
+                            brand awareness and trust.
+                          </p>
+      
+                          <div class="highlight-card card-column">
+                            <img class="highlight-card-icon" src="./assets/images/services/growth/icon-quote.png" alt="Quote">
+                            <div class="highlight-card-text">
+                              <p>
+                                Our in-house team of writers and designers create premium content suited 
+                                for your company that fits with your branding to generate the best results.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+      
+            <div id="creative-design" class="tab-content d-none">
+              <h2 class="section-title">Creative Design & Brand Building<span class="text-pink">.</span></h2>
+              <img class="section-featured-image" src="./assets/images/services/creative/creative-design.png" alt="Creative Design & Brand Building">
+      
+              <div class="row">
+                <div class="col-12 col-lg-7">
+                  <div class="section-content">
+                    <p>
+                      Our Creative Design services focuses on website design and user experience (UX). 
+                      Great UX design and implementation is crucial for increased browsing time and 
+                      lead conversions. We establish a positive browsing experience for the user 
+                      and strategically guide them to take the next action. We constantly test and 
+                      optimize website design and content to eliminate user frustration and maximize 
+                      conversions. We achieve this by creating sitemaps, wireframes and mockups that 
+                      optimize flow and test for any potential errors that would prevent a user from 
+                      converting. We execute and test the UX website design in order to continuously 
+                      improve results.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                  <div class="highlight-card">
+                    <img class="highlight-card-icon" src="./assets/images/services/creative/icon-creative.png" alt="Creative">
+                    <ul class="list-unstyled">
+                      <li>+ Responsive Website Design </li>
+                      <li>+ Landing Page Design </li>
+                      <li>+ Conversion Optimization </li>
+                      <li>+ Video Development </li>
+                      <li>+ Infographics</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div id="product-services" class="tab-content d-none">
+              <h2 class="section-title">Product Development<span class="text-pink">.</span></h2>
+              <img class="section-featured-image" src="./assets/images/services/product/product-development.png" alt="Product Development">
+      
+              <div class="row">
+                <div class="col-12 col-lg-7">
+                  <div class="section-content">
+                    <p>
+                      Our product development service caters to those with just a product idea 
+                      to those brands with existing products looking to rebrand, redesign or 
+                      repackage— whether you’re an investor or brand owner, our expert team 
+                      can help. Our connections and access to manufacturers will save you money 
+                      and the headache and stress. We took the knowledge and experience from 
+                      launching our first product to create a brand and launched additional 
+                      successful brands thereafter. We can do the same for you!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                  <div class="highlight-card">
+                    <img class="highlight-card-icon" src="./assets/images/services/product/icon-product.png" alt="Product Development">
+                    <ul class="list-unstyled">
+                      <li>+ Market Research</li>
+                      <li>+ Private Label, White Label and Sourcing </li>
+                      <li>+ Product and Package Design </li>
+                      <li>+ Product Branding </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="btn-float" data-id="tab-about">Next</a>
   </main>
 
   <script src="javascripts/vendors/w3schools-include.js"></script>

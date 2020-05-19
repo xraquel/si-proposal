@@ -1,0 +1,74 @@
+.portfolio-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-top: 45px;
+  width: 617px;
+  height: fit-content;
+
+  img {
+    margin-bottom: 25px;
+    max-width: 617px;
+    width: 100%;
+    object-position: cover;
+    @include boxshadow(0px 10px 16px -13px rgba($black, 0.75));
+  }
+
+  &.grid-images {
+    img {
+      flex: 0 0 calc(96%/2);
+      width: calc(96%/2);
+      height: auto;
+    }
+  }
+}
+
+#ad-campaigns,
+#social-media {
+  @include respond-to(md-down) {
+    margin-right: 0;
+  }
+}
+
+.ad-campaign-slider {
+  .portfolio-holder {
+    margin-right: 40px;
+  }
+
+  .single-holder img {
+    width: 95%;
+  }
+
+  @include respond-to(md-down) {
+    .swiper-wrapper {
+      height: auto;
+    }
+
+    .portfolio-holder {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 100%;
+    }
+
+    .single-holder img {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+}
+
+.single-holder {
+  margin-top: 45px;
+}
+
+.fluid-holder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 45px;
+  width: 95%;
+}
