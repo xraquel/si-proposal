@@ -1,0 +1,75 @@
+#learn {
+  &.tab-content {
+    padding: 115px 38px;
+  }
+
+  .section {
+    &-row {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-content {
+      margin-top: 75px;
+      margin-bottom: 45px;
+      max-width: 91%;
+
+      p {
+        margin-bottom: 22px;
+      }
+    }
+
+    &-featured-image {
+      position: absolute;
+      top: -55px;
+      right: -42px;
+      width: 450px;
+    }
+  }
+
+  .chart-holder {
+    img {
+      margin-left: auto;
+      width: 100%;
+      max-width: 610px;
+    }
+  }
+
+  @include respond-to(lg-down) {
+    &.tab-content {
+      padding: 30px 15px;
+    }
+
+    .section-featured-image {
+      width: 45%;
+    }
+  }
+  
+  @include respond-to(md-down) {
+    .section-featured-image {
+      position: relative;
+      top: unset;
+      right: unset;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .section-content {
+      margin-top: 25px;
+      max-width: 100%;
+    }
+
+    .highlight-card.card-column {
+      padding: 20px 25px;
+      width: 250px;
+    }
+  }
+
+  @include respond-to(sm-down) {
+    .chart-holder img {
+      margin-top: 20px;
+      margin-right: auto;
+      width: 100%;
+    }
+  }
+}

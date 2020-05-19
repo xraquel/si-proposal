@@ -1,0 +1,30 @@
+#social-media {
+  @include respond-to(lg-down) {
+    &.slider-tab .section-title {
+      max-width: 50%;
+    }
+  }
+
+  @include respond-to(md-down) {
+    .portfolio-holder {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 100%;
+    }
+
+    .portfolio-single {
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+}
+
+.social-media-slider {
+  @include respond-to(md-down) {
+    .swiper-wrapper {
+      height: auto;
+    }
+  }
+}

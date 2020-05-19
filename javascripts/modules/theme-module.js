@@ -16,6 +16,21 @@ $(function() {
       $(tab).trigger("click");
     }, 50);
   });
+
+  $(".btn-float").click(function() {
+    var next = $(this).attr('data-id');
+    $('#'+next).trigger('click').addClass('active');
+
+    var val = $('#'+next).next();
+
+    var x = val.hasClass("sidebar-dropdown") ? $('#'+next).next().next().attr('id') : $('#'+next).next().attr('id');
+
+    if(next === 'tab-contact') {
+      $(this).toggleClass('d-none');
+    }
+    
+    $(this).attr('data-id', x);
+  });
 });
 
 function openTab(evt, tab) {
@@ -44,22 +59,41 @@ function sidebar() {
     $(this).siblings().removeClass("active");
     $(this).addClass("active");
     $("#works-wrapper").removeClass("d-none");
+    
+    if($(window).width() <= 768) {
+      $(".sidebar").removeClass("open");
+    }
   });
 
   $(".services-dropdown a").click(function() {
     $(this).siblings().removeClass("active");
     $(this).addClass("active");
     $("#services-wrapper").removeClass("d-none");
+    
+    if($(window).width() <= 768) {
+      $(".sidebar").removeClass("open");
+    }
   });
 
   $(".sidebar-link").click(function() {
     $(this).siblings().removeClass("active");
     $(this).addClass("active");
+
+    var x = $(this).next();
+    var y = x.hasClass("sidebar-dropdown") ? $(this).next().next().attr('id') : $(this).next().attr('id');
+    
+    $('.btn-float').attr('data-id', y).removeClass('d-none');
+      
     if(!$("#works-wrapper").hasClass("d-none")){
       $("#works-wrapper").addClass("d-none");
     }
+
     if(!$("#services-wrapper").hasClass("d-none")){
       $("#services-wrapper").addClass("d-none");
+    }    
+
+    if($(window).width() <= 768) {
+      $(".sidebar").removeClass("open");
     }
   });
 
@@ -157,13 +191,25 @@ function worksSlider() {
 
 function servicesSlider() {
   $("#tab-amazon").click(function() {
-    var webDesign = new Swiper(".amazon-slider", {
+    var amazon = new Swiper(".amazon-slider", {
         speed: 400,
         slidesPerView: "auto",
         spaceBetween: 25,
         navigation: {
           nextEl: ".amazon-slider .swiper-button-next",
           prevEl: ".amazon-slider .swiper-button-prev",
+        },
+    });
+  });
+
+  $("#tab-marketing").click(function() {
+    var growthMarketing = new Swiper(".growth-slider", {
+        speed: 400,
+        slidesPerView: 1,
+        autoHeight: true,
+        navigation: {
+          nextEl: ".growth-slider .swiper-button-next",
+          prevEl: ".growth-slider .swiper-button-prev",
         },
     });
   });

@@ -1,0 +1,138 @@
+
+#hello {
+  .section {
+    &-featured-image {
+      position: absolute;
+      top: -38px;
+      right: 8px;
+      // width: 100vw;
+      width: 37vw;
+      max-width: 535px;
+    }
+
+    &-title {
+      padding-left: 8px;
+      margin-bottom: 34px;
+    }
+
+    &-content {
+      margin-top: 86px;
+      max-width: 90%;
+      
+      p {
+        margin-bottom: 22px;
+      }
+    }
+  }
+
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    
+    li {
+      display: flex;
+      align-items: flex-start;
+      flex-basis: calc(100%/4);
+      min-height: 70px;
+
+      font-family: $font-gotham;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0.01em;
+      color: $black;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        margin-right: 25px;
+        min-width: 25px;
+        min-height: 25px;
+        max-width: 25px;
+        max-height: 25px;
+  
+        background-image: url('../assets/images/intro/icon-check.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  @include respond-to(lg-down) {
+    .section-content {
+      max-width: 100%;
+    }
+  }
+
+  
+  @include respond-to(lg-down) {
+    .service-list li {
+      flex-basis: calc(100%/2);
+    }
+
+    .section-featured-image {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  @include respond-to(md-down) {
+    .section-featured-image {
+      position: relative;
+      top: unset;
+      right: unset;
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include respond-to(sm-down) {
+    .section-featured-image {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .section-content {
+      margin-top: 55px;
+    }
+
+    .highlight-card {
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+
+      &-icon {
+        margin-right: 15px;
+        width: 40px;
+      }
+
+      &:after {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  @include respond-to(xs) {
+    .service-list li {
+      flex-basis: 100%;
+      min-height: 40px;
+      font-size: 15px;
+
+      &:before {
+        margin-right: 20px;
+        min-width: 20px;
+        min-height: 20px;
+        max-width: 20px;
+        max-height: 20px;
+      }
+    }
+  }
+}
