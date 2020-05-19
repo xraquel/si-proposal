@@ -30,6 +30,10 @@ $(function() {
     }
     
     $(this).attr('data-id', x);
+
+    if($(window).width() <= 768) {
+      window.scrollTo(0, 0);
+    }
   });
 });
 
